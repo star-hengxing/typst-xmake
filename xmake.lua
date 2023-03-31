@@ -5,8 +5,8 @@ rule("typst")
         import("lib.detect.find_tool")
         local typst = assert(find_tool("typst"), "typst not found")
 
-        local outputdir = path.join(target:autogendir(), "rules", "typst")
-        local pdf_file = path.join(outputdir, path.filename(sourcefile) .. ".pdf")
+        local outputdir = "build"
+        local pdf_file = path.join(outputdir, path.basename(sourcefile) .. ".pdf")
         target:add("cleanfiles", pdf_file)
         batchcmds:show_progress(opt.progress, "${color.build.object}compiling.typst %s", sourcefile)
         batchcmds:mkdir(outputdir)

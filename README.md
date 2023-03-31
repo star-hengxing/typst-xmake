@@ -1,6 +1,6 @@
 # Typst xmake
 
-Use xmake as build system to compile typst to pdf.
+Use [xmake](https://github.com/xmake-io/xmake/) as build system to compile [typst](https://github.com/typst/typst) to pdf.
 
 # Getting started
 
@@ -14,7 +14,7 @@ scoop install xmake typst
 xmake
 ```
 
-After compilation success, you can find your pdf in `build\.gens\resume\windows\x64\release\rules\typst\resume.typ.pdf`.
+After compilation success, you can find your pdf in `build/main.pdf`.
 
 # Live coding
 
